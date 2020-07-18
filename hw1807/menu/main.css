@@ -1,0 +1,48 @@
+body {
+    padding: 10px;
+    background-color: thistle;
+}
+
+ 
+.menu_item {
+    
+    width : 70px;
+    height: 40px;
+    background-color: blueviolet;
+    text-align: center;
+    
+     
+    position: relative;
+}
+
+.menu_list {
+    display: none;
+     
+     
+    background-color: blueviolet;
+    position: relative;
+    left: 70px;
+    top: -18px;
+}
+
+.menu_item:hover  .menu_list {display:inline-block;}
+.menu_item:hover {
+    background-color: yellowgreen;
+     
+    
+}
+
+a {
+    display: block;
+     
+    width : 70px;
+    height: 40px;
+    color: black;
+    text-align: center;
+    
+}
+
+a:hover {
+    background-color: yellowgreen;
+}
+

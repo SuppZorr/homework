@@ -1,0 +1,153 @@
+body {
+    padding-top: 150px;
+}
+
+div {
+    display: inline-block;
+    position: relative;
+    border-radius: 7%;
+   
+     
+}
+
+span {
+    
+    display: block;
+    visibility: hidden;
+    position: relative;
+     
+    font-weight: 700;
+    color : darkgrey;
+    top:20%;
+    left:20%;
+}
+
+.border {
+     width: 100px;
+     height: 140px;
+     border: 2px solid black;   
+    background-color: white;  
+    cursor: pointer;
+    transition: 1s ease;
+    transition-delay: 0.3s;
+     
+ }
+
+ .card {
+    width: 95px;
+    height: 135px;
+    background: repeating-linear-gradient(-30deg, red 0px, red 16px, white 16px, white 20px);
+    left: 2.5px;
+    bottom: -2.5px;
+    top: 2.5px;
+    
+    
+}
+
+.two {
+    bottom: 0px;
+    right :40px;
+    z-index: 2;
+}
+ 
+.three {
+    bottom: 0px;
+    right : 80px;
+    z-index: 3; 
+}
+
+.four {
+    bottom: 0px;
+    right : 120px;
+    z-index: 4; 
+}
+
+.five {
+    bottom: 0px;
+    right : 160px;
+    z-index: 5;
+}
+
+.six {
+    bottom: 0px;
+    right : 200px;
+    z-index: 6;
+}
+
+.seven {
+    bottom: 0px;
+    right : 240px;
+    z-index: 7;
+}
+
+.eight {
+    bottom: 0px;
+    right : 280px;
+    z-index: 8;
+}
+
+.nine {
+    bottom: 0px;
+    right : 320px;
+    z-index: 9;
+}
+
+.ten {
+    bottom: 0px;
+    right : 360px;
+    z-index: 10;
+}
+
+
+.border:hover {
+    bottom: 100px;
+    z-index: 20;
+    box-shadow: 30px 70px 25px 3px rgb(66, 66, 66);
+    
+    
+}
+
+.border:hover .card {visibility: hidden;}
+.border:hover span  {visibility: visible;}
+.border:hover   .logo {visibility: visible;}
+.border:hover   .name1 {visibility: visible;}
+.border:hover   .name2 {visibility: visible;} 
+
+.logo  {
+display:block;
+width: 10px; 
+height: 10px; 
+background-color: red; 
+transform: rotate(45deg);
+visibility: hidden;
+margin-left: 2px;
+margin-top: 2px;
+}
+
+ 
+
+.name1  {
+    color:red;
+    font-weight: bolder;
+    font-size: larger;
+    visibility: hidden;
+    left: 3px;
+    
+}
+
+.name2 {
+    
+    color:red;
+    font-weight: bolder;
+    font-size: larger;
+    visibility: hidden;
+    position:relative;
+    left: 81px;
+    top: 50px;
+    transform : rotate(180deg)
+}
+
+.five > .card > .name2 {
+    left : 75px;
+    
+}

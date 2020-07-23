@@ -1,0 +1,76 @@
+body {
+    font: x-large/110% "new century schoolbook", serif;
+}
+
+ 
+.content {
+    
+    margin: 20px;
+}
+
+.panel {
+    border: 2px solid;
+    height: 20%;
+    background-color: aqua;
+    
+    
+}
+
+.logo {
+    display:inline-block;
+    position: relative;
+    top: 30%;
+    left: 5%;
+     
+}
+ img {
+     width:100px;
+ }
+
+.menu {
+     
+    position: relative;
+    float:right;
+    line-height: 120px;
+}
+
+.list {
+    display:inline-block;
+    font-size: 30px;
+    background-color: aqua;
+    position: relative;
+    margin: 10px;
+    
+}
+
+.container {
+    display:none;
+    background-color: white;
+    position: absolute;
+}
+
+.item {
+    height:80px; 
+    position: relative;
+    font-size: smaller;
+    font-weight: 900;
+    margin-left:  15px;
+}
+
+
+.list:hover .container {
+    display:block;
+    z-index:10;}
+
+
+.item:hover  span::before {
+    content: " \2602";
+     
+    
+}
+
+.item:hover {
+    width: 120%;
+    margin-left:   0px;
+    
+}

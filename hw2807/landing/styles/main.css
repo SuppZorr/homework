@@ -20,7 +20,7 @@ html {
     height: 310px;
     top: 469px;
     background-color: rgb(35, 92, 119);
-    border-top: 10px solid rgb(59, 123, 202);
+    border-top: 8px solid rgb(59, 123, 202);
 }
 
 
@@ -36,23 +36,23 @@ span {
       color : rgb(84, 149, 179);
 }
 .cloud1 {
-    left: 144px;
+    left: 83px;
 }
 
 .cloud2 {
-    left: 525px;
+    left: 464px;
 }
 
 .ice  {
     top: 279px;
-    left: 339px;
+    left: 278px;
     z-index: 3;
      
 }
 
 .ship {
-    top: 65%;
-    left: 32%;
+    top: 452px;
+    left: 253px;
     z-index: 3;
 }
 
@@ -73,7 +73,7 @@ span {
     color: white;
     text-shadow: 2px 4px rgb(84, 149, 179);
     letter-spacing: 4px;
-    left: 26px;
+    left: -35px;
     top: 6px;
 }
 
@@ -85,14 +85,14 @@ span {
     width: 239px;
     height: 36px;
     position: relative;
-    top: 10px;
-    left: 10px;
+    top: 7px;
+    left: -50px;
  }
 
  .sub {
     line-height: 53px;
     position: relative;
-    left: 9px;
+    left: -49px;
     top: 11px;
     font-size: 14px;
     
@@ -101,7 +101,7 @@ span {
     background: linear-gradient(to bottom, rgb(247, 206, 130) , rgb(247, 175, 42) );
     position: relative;
     top: 6px;
-    left: 16px;
+    left: -44px;
     width: 93px;
     height: 35px;
     border-radius: 5px;

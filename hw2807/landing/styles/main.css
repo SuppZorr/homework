@@ -40,7 +40,7 @@ span {
 }
 
 .cloud2 {
-    left: 526px;
+    left: 525px;
 }
 
 .ice  {
@@ -73,8 +73,8 @@ span {
     color: white;
     text-shadow: 2px 4px rgb(84, 149, 179);
     letter-spacing: 4px;
-    left: 23px;
-    top: -4px;
+    left: 26px;
+    top: 6px;
 }
 
 .email {

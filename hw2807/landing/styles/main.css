@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 
-html {
+ 
+
+body {
+    margin-left:   auto;
     background-color: rgb(35, 92, 119);
     z-index:-20;
 }
@@ -119,8 +122,9 @@ span {
     position: relative; 
     width: 980px;
     height: 700px;
-    text-align: center;
-    margin-left: 48px;
+    margin-left: auto;
+    margin-right: auto;
+     
     
  }
 

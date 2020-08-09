@@ -1,77 +1,62 @@
 @keyframes bounce {
     0% {top:-90px}
-    10% {top:-280px}
-    15% {top:-300px}
-    25% {top:-120px}
-    35% {top:-280px}
-    40% {top:-300px}
-    50% {top:-150px}
-    60% {top:-280px}
-    65% {top:-300px}
-    75% {top:-180px}
-    80% {top:-280px}
-    90% {top:-300px}
+    6.25% {top: -190px}
+    12.5% {top:-120px}
+    18.75% {top: -220px}
+    25% {top:-150px}
+    31.25% {top: -250px}
+    37.5% {top:-180px}
+    43.75% {top: -280px}
+    50% {top:-90px}
+    56.25% {top: -190px}
+    62.5% {top:-120px}
+    68.75% {top: -220px}
+    75% {top:-150px}
+    81.25% {top: -250px}
+    87.5% {top:-180px}
+    93.75% {top: -280px}
     100% {top:-90px}
 }
 
 @keyframes move {
     0% {left: 148px}      
-    10%  {left: 214px} 
-    12.5% {left: 224px}      
-    15% {left: 234px} 
-    25% {left: 300px}
-    35% {left: 367px}
-    37.5% {left: 377px}      
-    40% {left: 387px}
-    50% {left: 454px}
-    60% {left: 520px} 
-    62.5% {left: 530px}       
-    65% {left: 540px} 
-    75% {left: 606px}
-    85% {left: 673px} 
-    87.5% {left: 683px}        
-    90% {left: 693px} 
-    100% { left: 760px;}
+    
+    12.5% {left: 300px}       
+    
+    25%    {left: 454px}
+    
+    37.5%   {left: 606px}      
+     
+    50%    { left: 760px;}
+    
+    62.5% {left: 606px}        
+     
+    75% {left: 454px}
+     
+    87.5% {left: 300px}         
+     
+    100% {left: 148px} 
 }
 
 
 
-@keyframes bouncereverse {
-    0% {top:-90px}
 
-    10% {top:-280px}
-    15% {top:-300px}
 
-    25% {top:-120px}
-
-    35% {top:-280px}
-    40% {top:-300px}
-
-    50% {top:-150px}
-
-    60% {top:-280px}
-    65% {top:-300px}
-
-    75% {top:-180px}
-
-    80% {top:-280px}
-    90% {top:-300px}
-
-    100% {top:-90px}
-}
 
 @keyframes block1 {
     0% {height: 90px; }
-    15% {height: 210px;}
-    85% {height: 210px;}
+    40% {height: 90px; }
+    50% {height: 210px;}
+    90% {height: 210px;}
     100% {height: 90px;}
     
 }
 
 @keyframes block2 {
     0% {height: 120px;}
-    15% {height: 180px;}
-    85% {height: 180px;}
+    40% {height: 120px;}
+    50% {height: 180px;}
+    90% {height: 180px;}
     100% {height: 120px;}
      
 }
@@ -79,8 +64,9 @@
 
 @keyframes block4 {
     0% {height: 180px;}
-    15% {height: 120px }
-    85% {height: 120px;}
+    40% {height: 180px;}
+    50% {height: 120px }
+    90% {height: 120px;}
     100% {height: 180px;}
 
      
@@ -88,8 +74,9 @@
 
 @keyframes block5 {
     0% {height: 210px;}
-    15% {height: 90px; }
-    85% {height: 90px;}
+    40% {height: 210px;}
+    50% {height: 90px; }
+    90% {height: 90px;}
     100% {height: 210px; }
      
 }
@@ -117,10 +104,12 @@ body {
     top: -90px;
     left: 148px;
     background : linear-gradient( orange, red ) ;
-    animation: bounce 3s ease-in-out    1 ,
-    move 3s ease-in-out 1,
-    bouncereverse 3s ease-in-out 3s 1,
-    move 3s ease-in-out 3s reverse 1;
+    animation: bounce 6s    cubic-bezier(1,1,.47,1.04) infinite ,
+    
+    move 6s ease-in-out infinite;
+    bouncereverse 3s ease-in-out 3s infinite,
+    move 3s ease-in-out 3s reverse infinite;
+    cubic-bezier(1,1,.47,1.04)
     
 }
 
@@ -134,12 +123,12 @@ body {
 
 .one {
     height: 90px;
-    animation: block1 3.5s ease 2.5s   1;
+    animation: block1 6s ease     infinite;
 }
 
 .two {
     height: 120px;
-    animation: block2 3.5s ease 2.5s   1;
+    animation: block2 6s ease     infinite;
 }
 
 .three {
@@ -148,12 +137,12 @@ body {
 
 .four {
     height: 180px;
-    animation: block4 3.5s ease  2.5s  1;
+    animation: block4 6s ease  infinite;
 }
 
 .five {
     height: 210px;
-    animation: block5 3.5s ease  2.5s  1;
+    animation: block5 6s ease     infinite;
 }
 
 

@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2020 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="play" unicode="&#xe800;" d="M772 333l-741-412q-13-7-22-2t-9 20v822q0 14 9 20t22-2l741-412q13-7 13-17t-13-17z" horiz-adv-x="785.7" />
+
+<glyph glyph-name="spin3" unicode="&#xe832;" d="M494 850c-266 0-483-210-494-472-1-19 13-20 13-20l84 0c16 0 19 10 19 18 10 199 176 358 378 358 107 0 205-45 273-118l-58-57c-11-12-11-27 5-31l247-50c21-5 46 11 37 44l-58 227c-2 9-16 22-29 13l-65-60c-89 91-214 148-352 148z m409-508c-16 0-19-10-19-18-10-199-176-358-377-358-108 0-205 45-274 118l59 57c10 12 10 27-5 31l-248 50c-21 5-46-11-37-44l58-227c2-9 16-22 30-13l64 60c89-91 214-148 353-148 265 0 482 210 493 473 1 18-13 19-13 19l-84 0z" horiz-adv-x="1000" />
+
+<glyph glyph-name="sort" unicode="&#xf0dc;" d="M571 243q0-15-10-25l-250-250q-11-11-25-11t-25 11l-250 250q-11 10-11 25t11 25 25 11h500q14 0 25-11t10-25z m0 214q0-14-10-25t-25-11h-500q-15 0-25 11t-11 25 11 25l250 250q10 11 25 11t25-11l250-250q10-10 10-25z" horiz-adv-x="571.4" />
+
+<glyph glyph-name="bitcoin" unicode="&#xf15a;" d="M651 493q10-102-73-144 65-16 98-58t25-119q-4-40-18-70t-36-49-54-33-68-19-81-9v-142h-86v140q-45 0-68 1v-141h-86v142q-10 0-30 1t-31 0h-112l18 102h62q27 0 32 28v225h9q-4 0-9 0v161q-7 37-50 37h-62v92l119-1q35 0 54 1v141h86v-138q45 1 68 1v137h86v-141q44-4 78-13t63-25 46-43 20-64z m-120-304q0 20-8 35t-21 26-32 17-36 11-42 5-38 1-36 0-27-1v-189q5 0 21 0t27 0 29 1 33 2 32 5 31 8 26 11 22 17 14 22 5 29z m-39 265q0 19-7 33t-17 23-27 16-31 9-34 5-32 1-31 0-22-1v-171q3 0 20 0t26 0 27 1 31 3 29 6 27 10 21 15 15 22 5 28z" horiz-adv-x="714.3" />
+</font>
+</defs>
+</svg>

@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "Google Sans Regular";
+    src: url(../fonts/GoogleSans-Regular.ttf)    
+}
+
+@font-face {
+    font-family: "Google Sans Medium";
+    src: url(../fonts/GoogleSans-Medium.ttf)    
+}
+@font-face {
+    font-family: "Google Sans Bold";
+    src: url(../fonts/GoogleSans-Bold.ttf)    
+}
+@font-face {
+    font-family: "Fontello";
+    src: url(../fonts/fontello.ttf)    
+}
+
+ 
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 36px;
+    background: #F2F2F2;
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+     
+}
+
+.header_item {
+    height: 18px;
+    font-family: "Google Sans Medium";
+    font-size: 14px;
+    line-height: 16px;
+    margin : 10px;
+    color: #4F4F4F;
+     
+}
+
+.nav {
+    height: 83px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    background: #FFFFFF;
+    border: 1px solid #E8E8EE;
+     
+}
+
+.menu {
+    width: 26px;
+    height: 19px;
+    background-image: url(../images/menu.png);
+    margin : 20px;
+}
+
+button {
+    width: 218px;
+    height: 44px;
+    font-family: "Google Sans Medium";
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    background: linear-gradient(245.23deg, #32228A -43.18%, #745ACD 100%), #C4C4C4;
+    border-radius: 3px;
+}
+
+
+.pics {
+    height: 221px;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.picture {
+    width: 357.88px;
+    height: 169px;
+}
+
+.car {
+    background-image: url(../images/car.png);
+}
+
+.phone {
+    background-image: url(../images/phone.png);
+}
+
+.sort {
+    display: flex;
+
+}
+
+
+.chairs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.chair_item {
+    background-image: url(../images/chair.png);
+    width: 162px;
+    height: 257px;
+    border: 1px solid #E8E8EE;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin: 15px;
+}

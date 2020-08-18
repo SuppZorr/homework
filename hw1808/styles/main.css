@@ -1,25 +1,41 @@
 @font-face {
-    font-family: "Google Sans Regular";
-    src: url(../fonts/GoogleSans-Regular.ttf)    
-}
-
-@font-face {
     font-family: "Google Sans Medium";
     src: url(../fonts/GoogleSans-Medium.ttf)    
 }
-@font-face {
-    font-family: "Google Sans Bold";
-    src: url(../fonts/GoogleSans-Bold.ttf)    
-}
+ 
 @font-face {
     font-family: "Fontello";
     src: url(../fonts/fontello.ttf)    
 }
 
+@media   (max-width: 749px)   {
+    .mobile {
+        display: flex;
+    }
+     
+}
+
+@media   (min-width: 750px) and (max-width: 1300px) {
+    .desktop {
+        display:flex;
+    }
+
+}
+
+span {
+    font-size: 18px;
+    line-height: 21px;
  
+    color: #979FAD;
+} 
+
+
 .main {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    font-family: "Google Sans Medium";
+     
 }
 
 .header {
@@ -27,7 +43,9 @@
     background: #F2F2F2;
     display: flex;
     justify-content: flex-end;
-    width: 100vw;
+     
+    
+
      
 }
 
@@ -38,7 +56,7 @@
     line-height: 16px;
     margin : 10px;
     color: #4F4F4F;
-     
+    
 }
 
 .nav {
@@ -46,18 +64,34 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
+    min-width: 100px;
     background: #FFFFFF;
     border: 1px solid #E8E8EE;
      
+     
 }
+
+.search {
+    width: 651px;
+    height: 44px;
+ 
+
+    background: #FCFCFC;
+    border: 1px solid #E8E8EE;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
 
 .menu {
     width: 26px;
     height: 19px;
     background-image: url(../images/menu.png);
     margin : 20px;
+     
 }
+
+ 
 
 button {
     width: 218px;
@@ -68,14 +102,20 @@ button {
     color: #FFFFFF;
     background: linear-gradient(245.23deg, #32228A -43.18%, #745ACD 100%), #C4C4C4;
     border-radius: 3px;
+     
 }
 
+ 
 
 .pics {
-    height: 221px;
+     
     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    overflow: auto;
+    max-height: 340px;
+    
+     
 }
 
 
@@ -94,22 +134,68 @@ button {
 
 .sort {
     display: flex;
-
+    justify-content: space-between;
+    margin: 10px;
 }
 
+.sort_container {
+     
+    justify-content: space-between;
+     
+}
+
+.sort_type {
+    font-size: 18px;
+    line-height: 21px;
+    margin: 5px;
+
+    color: #333333;
+}
+
+
+.list {
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #333333;
+}
 
 .chairs {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    border: 1px solid rgb(6, 7, 77);
+     
 }
 
 .chair_item {
     background-image: url(../images/chair.png);
-    width: 162px;
-    height: 257px;
+    width: 252px;
+    height: 399px;
     border: 1px solid #E8E8EE;
     box-sizing: border-box;
     border-radius: 3px;
-    margin: 15px;
+    margin: 10px  
+}
+
+.mobile {
+    width: 50px;
+}
+
+
+
+.sort_type_mobile_currency:after {
+    content: '\f15a';
+    font-family: "Fontello";
+    margin: 0 -80px;
+}
+
+.sort_type_mobile_direction:after {
+    content: '\f0dc';
+    font-family: "Fontello";
+    margin: 0 -70px;
+}
+
+.desktop , .mobile {
+    display:none;
 }

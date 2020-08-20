@@ -3,22 +3,17 @@ body {
 }
 
 .container {
-  max-width: 1240px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  width: 610px;
+  height: 610px;
+  background-color: #6b6b6b8e;
+  background-image: repeating-linear-gradient(to right, white 5px, transparent 5px, transparent 55px, white 55px, white 60px), repeating-linear-gradient(to top, white 5px, transparent 5px, transparent 55px, white 55px, white 60px);
 }
 
-.brick {
-  margin: 5px;
-  height: 300px;
-  width: 300px;
-  background-color: #6b6b6b8e;
-}
+/*.brick {
+    margin: $margin;
+    height : $height;
+    width: $height;
+    background-color: $back-color;
+    
+} */
 /*# sourceMappingURL=main.css.map */

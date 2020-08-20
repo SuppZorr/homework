@@ -1,7 +1,12 @@
 $margin: 5px;
-$height: 300px;
-$back-color: #6b6b6b8e;
+ $back-color: #6b6b6b8e;
 $body-padding: 10px;
+$height: 50px;
+$height2: $height+$margin;
+$height3: $height2+1px;
+$height4: $height+(2*$margin);
+$rows : 10;
+$columns: 10;
 
 
 
@@ -13,17 +18,34 @@ body {
 }
 
 .container {
-    max-width: 4*$height+ 8*$margin;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    width: ($rows*$height) + ($margin*($rows+1)*2);
+    height: ($columns*$height) + ($margin*($columns+1)*2);
+    background-color: $back-color;
+    background-image: repeating-linear-gradient(to right,  white #{$margin}, transparent #{$margin}, transparent $height2, white $height2, white $height4 ),
+    repeating-linear-gradient(to top,  white #{$margin}, transparent #{$margin}, transparent $height2, white $height2, white $height4 );
+    
+     
+    
+
+     
 }
 
 
-.brick {
+
+
+
+
+
+
+
+
+/*.brick {
     margin: $margin;
     height : $height;
     width: $height;
     background-color: $back-color;
     
-}
+} */
+
+
+

@@ -1,0 +1,29 @@
+$margin: 5px;
+$height: 200px;
+$back-color: #6b6b6b8e;
+
+
+
+
+
+
+body {
+    padding:10px;
+     
+}
+
+.container {
+    max-width:850px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.brick {
+    margin: $margin;
+    height : $height;
+    width: $height;
+    background-color: $back-color;
+    
+}

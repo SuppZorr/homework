@@ -1,19 +1,19 @@
 $margin: 5px;
-$height: 200px;
+$height: 300px;
 $back-color: #6b6b6b8e;
-
+$body-padding: 10px;
 
 
 
 
 
 body {
-    padding:10px;
+    padding: $body-padding;
      
 }
 
 .container {
-    max-width:850px;
+    max-width: 4*$height+ 8*$margin;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

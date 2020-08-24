@@ -14,9 +14,7 @@ main {
     "ft ft ft ft";
 }
 
-main * {
-    border: 1px solid black;
-}
+ 
 
 .logo {
     grid-area: lg;
@@ -66,7 +64,7 @@ aside * {
     grid-template-areas: 
     "lr5 lr5 lr5 lr5 lr5 lr5 lr5 lr5 lr5 . . . . . . ."
     ". . .   .  . .   . lr6 lr6 lr6 lr6 lr6 lr6 lr6 lr6 lr6";
-
+    padding: 3px 0;
     border: 2px solid red;
     gap: 5px 5px;
     
@@ -81,9 +79,7 @@ aside * {
 
 .content2 {
     grid-area: c2;
-    font-weight: 900;
-    line-height: 100px;
-    text-align: center;
+    background-image: url(../images/flowers.jpg)
 }
 
 .content3 {
@@ -114,9 +110,8 @@ aside * {
 
 footer {
     grid-area: ft;
-    font-weight: 900;
-    line-height: 60px;
-    text-align: center;
+    background-image: url(../images/hills.jpg)
+
 }
 
 .lorem1 {
@@ -140,14 +135,25 @@ footer {
     display:flex;
     justify-content: space-between;
      
+    .pic {
+        background-image: url(../images/cat1.jpg);
+        align-self: center;
+    }
 }
+
+ 
 
 .lorem6 {
     grid-area: lr6;
     display:flex;
     justify-content: space-between;
-     
+    .pic {
+        background-image: url(../images/cat2.jpg);
+        align-self: center;
+    }
 }
+
+ 
 
 .text {
     overflow: hidden;
@@ -156,14 +162,10 @@ footer {
 
 .pic {
     margin: 5px 5px;
-    width: 80px;
-    height: 80px;
+    width: 83px;
+    height: 83px;
     border-radius: 100%;
-    color:white;
-    font-weight: 900;
-    background-color: black;
-    text-align: center;
-    line-height: 80px;
+     
      
 }
 

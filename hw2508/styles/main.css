@@ -11,10 +11,6 @@ main {
       grid-template-areas: "lg lg lg ab" "as c1 c1 c1" "as c2 c2 c2" "c3 c3 c3 c3" "c4 c4 c4 c4" "ft ft ft ft";
 }
 
-main * {
-  border: 1px solid black;
-}
-
 .logo {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -83,6 +79,7 @@ aside * {
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       grid-template-areas: "lr5 lr5 lr5 lr5 lr5 lr5 lr5 lr5 lr5 . . . . . . ." ". . .   .  . .   . lr6 lr6 lr6 lr6 lr6 lr6 lr6 lr6 lr6";
+  padding: 3px 0;
   border: 2px solid red;
   gap: 5px 5px;
 }
@@ -97,9 +94,7 @@ aside * {
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
   grid-area: c2;
-  font-weight: 900;
-  line-height: 100px;
-  text-align: center;
+  background-image: url(../images/flowers.jpg);
 }
 
 .content3 {
@@ -138,9 +133,7 @@ footer {
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: ft;
-  font-weight: 900;
-  line-height: 60px;
-  text-align: center;
+  background-image: url(../images/hills.jpg);
 }
 
 .lorem1 {
@@ -188,6 +181,13 @@ footer {
           justify-content: space-between;
 }
 
+.lorem5 .pic {
+  background-image: url(../images/cat1.jpg);
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .lorem6 {
   -ms-grid-row: 2;
   -ms-grid-column: 8;
@@ -201,6 +201,13 @@ footer {
           justify-content: space-between;
 }
 
+.lorem6 .pic {
+  background-image: url(../images/cat2.jpg);
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .text {
   overflow: hidden;
   width: 70%;
@@ -208,14 +215,9 @@ footer {
 
 .pic {
   margin: 5px 5px;
-  width: 80px;
-  height: 80px;
+  width: 83px;
+  height: 83px;
   border-radius: 100%;
-  color: white;
-  font-weight: 900;
-  background-color: black;
-  text-align: center;
-  line-height: 80px;
 }
 
 .lorem7 {

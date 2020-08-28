@@ -1,10 +1,12 @@
 main {
     border: 1px solid green;
+    box-sizing: border-box;
+    height: 100vh;
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 3fr 3fr 2fr 4fr ;
-    grid-template-rows: 60px  200px 100px 40px 150px 60px;
+    grid-template-rows: 1fr  3fr 1.5fr 0.5fr 2fr 100px;
     grid-template-areas: 
     "lg lg lg ab"
     "as c1 c1 c1"
@@ -21,6 +23,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-right: 2px solid ;
 }
 
 .about {
@@ -36,16 +39,16 @@ aside {
     padding: 5px 15px 0px 10px;
     grid-area: as;
     display:grid;
-    grid-template-columns: repeat(4, 1fr)  ;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns:  1fr 1fr  ;
+    grid-template-rows: repeat(5, 1fr);
     grid-template-areas: 
-    "lr1 lr1  . . "
-    "lr1 lr1  lr2 lr2 "
-    "lr3 lr3  lr2 lr2 "
-    "lr3 lr3  lr4 lr4 "
-    ".   .    lr4 lr4 "  ;
+    "lr1   . "
+    "lr1   lr2 "
+    "lr3   lr2 "
+    "lr3   lr4 "
+    ".     lr4 "  ;
     border: 2px solid red;
-    gap: 50px 5px  ;
+    gap: 50px 0  ;
     overflow-y:scroll;
      
 }
@@ -53,20 +56,29 @@ aside {
 aside * {
     border: 2px solid blue;
     overflow: hidden;
-    height: 120px;
+    height: 130px;
 }
 
 .content1 {
     grid-area: c1;
+    max-height: 30vh; 
     display:grid;
-    grid-template-columns: repeat(16, 1fr) ;
+    grid-template-columns:  1fr  ;
+    grid-template-rows: 1fr 1fr  ;
+    grid-template-areas:
+    "lr5" 
+    "lr6";
+   
+   
+   
+   /* grid-template-columns: repeat(16, 1fr) ;
     grid-template-rows: 1fr 1fr  ;
     grid-template-areas: 
     "lr5 lr5 lr5 lr5 lr5 lr5 lr5 lr5 lr5 . . . . . . ."
-    ". . .   .  . .   . lr6 lr6 lr6 lr6 lr6 lr6 lr6 lr6 lr6";
+    ". . .   .  . .   . lr6 lr6 lr6 lr6 lr6 lr6 lr6 lr6 lr6";*/
     padding: 3px 0;
     border: 2px solid red;
-    gap: 5px 5px;
+    /*gap: 5px 5px;*/
     
 }
 
@@ -93,6 +105,7 @@ aside * {
 
 
 .content4 {
+    max-height: 20vh;
     grid-area: c4;
     display:grid;
     grid-template-columns: 1fr 1fr  ;
@@ -109,8 +122,9 @@ aside * {
 }
 
 footer {
+
     grid-area: ft;
-    background-image: url(../images/hills.jpg)
+    background-image: url(../images/mountain.jpg)
 
 }
 
@@ -132,9 +146,12 @@ footer {
 
 .lorem5 {
     grid-area: lr5;
+    justify-self: start;
     display:flex;
     justify-content: space-between;
-     
+    max-width: 450px;
+    min-width:  0px;
+    
     .pic {
         background-image: url(../images/cat1.jpg);
         align-self: center;
@@ -147,6 +164,10 @@ footer {
     grid-area: lr6;
     display:flex;
     justify-content: space-between;
+    max-width: 450px;
+    min-width:  0px;
+    justify-self: end;
+     
     .pic {
         background-image: url(../images/cat2.jpg);
         align-self: center;
@@ -185,15 +206,26 @@ footer {
         display:none;
     }
 
-    .content1  {
+    aside {
+        grid-template-areas: 
+        " .   lr1"
+        " lr2 lr1 "
+        " lr2 lr3 "
+        " lr4 lr3 "
+        " lr4   . "  ; 
+
+    }
+    /*.content1  {
+        max-height: 30vh;
         grid-template-columns: 1fr ;
         grid-template-rows: 1fr 1fr  ;
         grid-template-areas: 
         "lr5"
         "lr6";
-    }
+    }*/
 
     .content4 {
+        max-height: 30vh;
         grid-template-columns: 1fr ;
         grid-template-rows: 1fr 1fr  ;
         grid-template-areas: 
@@ -204,7 +236,7 @@ footer {
     main {    
    
         grid-template-columns: 4fr 1fr 5fr   ;
-        grid-template-rows: 25px  35px 200px 80px 250px 60px;
+        grid-template-rows: 0.4fr  0.6fr 2.75fr 1.25fr 3fr 120px;
         grid-template-areas: 
         "lg lg lg "
         "ab ab ab "
@@ -214,6 +246,9 @@ footer {
         "ft ft ft ";
     }
 
-   
+    .lorem6 {
+        
+        justify-self: start;
+    }
 
 }

@@ -68,7 +68,7 @@ aside * {
     grid-template-areas:
     "lr5" 
     "lr6";
-   
+     
    
    
    /* grid-template-columns: repeat(16, 1fr) ;
@@ -215,17 +215,13 @@ footer {
         " lr4   . "  ; 
 
     }
-    /*.content1  {
-        max-height: 30vh;
-        grid-template-columns: 1fr ;
-        grid-template-rows: 1fr 1fr  ;
-        grid-template-areas: 
-        "lr5"
-        "lr6";
-    }*/
+    .content1  {
+        overflow: hidden;
+    }
 
     .content4 {
         max-height: 30vh;
+        overflow-y: scroll;
         grid-template-columns: 1fr ;
         grid-template-rows: 1fr 1fr  ;
         grid-template-areas: 
